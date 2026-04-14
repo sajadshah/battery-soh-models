@@ -30,11 +30,19 @@ For each dataset, you can find the corresponding scripts to train AutoEncoder an
   ./run.sh
   ```
 
-There are various options for the `run.sh` script:
+This script automates the whole pipline in multiple states, including:
+1. Data Preparation: convert each dataset into a commond csv format.
+2. Auto-encoder training: unsupervised training of the encoder-decoder model structure to identify the hidden intermediate space.
+3. Delta-Capacity (dcap) model training: using the encoder of the previous stage, add a fully-connected layer at the top, and train using the capacity labels.
+
+There are various options for the `run.sh` script to configure the model and training procedure. For example:
 ```bash
   ./run.sh --exp-name "test" train-cells "RW01" --valid-cells "RW09" \
             --window-length 32768 --window-step 32768 --latent-size 256 \
             --nj 8 -- data-dir "DATA_DIR" --epochs 100 --lr 0.001
   ```
 
+## TO-DO
+- [ ] add tri data preparation
+- [ ] scripts for downloading the data (TRI and NASA)
 
