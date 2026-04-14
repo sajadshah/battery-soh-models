@@ -1,9 +1,0 @@
-tensorflow[and-cuda]
-scikit-learn
-keras
-scipy
-matplotlib
-tqdm==4.66.5
-pandas
-matplotlib-inline
-notebook

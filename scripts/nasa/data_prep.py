@@ -31,6 +31,7 @@ def prepare_mat_file(args, matfile):
     #     csvfile_wsidx = os.path.join(args.data_dir, f"{batname}_normal_wsidx.csv")
     #     create_windowing_start_indices(csvfile_gc, args.window_length, args.window_overlap, csvfile_wsidx)
     print(matfile, " done.")
+    return True
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -46,7 +47,7 @@ if __name__ == '__main__':
     with open(os.path.join(args.data_dir, "normalized_timestep"), mode="w") as f:
         print(args.normalized_time_step, file=f)
     
-    all_mat_files = glob.glob(os.path.join(args.nasa_data_dir, "*", "*", "data", "Matlab", "*.mat"))
+    all_mat_files = glob.glob(os.path.join(args.nasa_data_dir, "*", "data", "Matlab", "*.mat"))
     with Pool(args.nj) as p:
         print(p.starmap(prepare_mat_file, zip([args]*len(all_mat_files), all_mat_files)))
 
