@@ -2,7 +2,7 @@
 
 ## Publication
 If you find this work useful please give credits to the authors by citing:
-* Shahsavari S, Immonen E, Haghbayan H, Plosila J. **A Novel Approach for Battery State-of-Health Estimation Using Convolutional Auto-Encoders**. In2025 European Control Conference (ECC) 2025 Jun 24 (pp. 2433-2439) ([PDF](https://ieeexplore.ieee.org/abstract/document/11186898))
+* Shahsavari S, Immonen E, Haghbayan H, Plosila J. **A Novel Approach for Battery State-of-Health Estimation Using Convolutional Auto-Encoders**. In 2025 European Control Conference (ECC) 2025 Jun 24 (pp. 2433-2439) ([PDF](https://ieeexplore.ieee.org/abstract/document/11186898))
 
 ```
 @inproceedings{shahsavari2025novel,
