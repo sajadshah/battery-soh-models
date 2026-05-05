@@ -43,6 +43,6 @@ There are various options for the `run.sh` script to configure the model and tra
   ```
 
 ## TO-DO
-- [ ] add TRI data preparation
+- [x] add TRI data preparation
 - [ ] scripts for downloading the data (TRI and NASA)
 
